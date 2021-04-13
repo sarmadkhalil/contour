@@ -25,6 +25,12 @@ Run composer install in cmd
 composer install
 ```
 
+After composer install make sure that the .env file is present. 
+Run command php artisn key:generate.
+```
+php artisn key:generate
+```
+
 Create database in phpmyadmin
 Edit the .env file in the project folder and add the database name, user and password set
 Run php artisan migrate 
