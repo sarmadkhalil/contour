@@ -24,10 +24,6 @@
             <a class="ml-3" href="{{ URL::current().'?sort=name_desc' }}">Name - Descending</a>
             <a class="ml-3" href="{{ URL::current().'?sort=impression_asc' }}">Impressions - Ascending</a>
             <a class="ml-3" href="{{ URL::current().'?sort=impression_desc' }}">Impression - Descending</a>
-            <a class="ml-3" href="{{ URL::current().'?sort=conversion_asc' }}">Conversion - Ascending</a>
-            <a class="ml-3" href="{{ URL::current().'?sort=conversion_desc' }}">Conversion - Descending</a>
-            <a class="ml-3" href="{{ URL::current().'?sort=revenue_asc' }}">Revenue - Ascending</a>
-            <a class="ml-3" href="{{ URL::current().'?sort=revenue_desc' }}">Revenue - Descending</a>
         </div>
     </div>
     <div class="row">
@@ -36,14 +32,14 @@
             <div class="card h-100 ">
                 <div class="card-body">
                     <div class="row">
-                        <div class="pl-5 col-md-3">
+                        <div class="pl-3 col-lg-3">
                             @if ($user->avatar != '')
                                 <img style="height: 100px;" src="{{$user->avatar}}" alt="">
                             @else
                                 <div class="profile" id="profileImage_{{$user->id}}"></div>
                             @endif
                         </div>
-                        <div class="mt-4 col-md-9">
+                        <div class="mt-lg-4 col-lg-9">
                             <div class="row">
                                 <h3 class="card-title" id = "">{{$user->name}}</h3>
                             </div>
