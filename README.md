@@ -42,56 +42,20 @@ This process can take a long time, so I have added the sql file in the root fold
 
 Depending on user preference either run php artisan serve, or setup the virtual host https://medium.com/d6-digital/create-virtual-host-for-apache-on-windows-10-by-using-xampp-8664b0427567
 
-## Running the tests
+## Classes
+User and Logs Model was created and has functions to determine the relationship between the two model. The relationship is one user has many logs.
 
-Explain how to run the automated tests for this system
+## Controller
+UserController has two methods, one to load the index page, and the other to get json data for the charts.
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+## Views
+The view is in resources/views/users/index.blade.php, it has all the view level code and the javascript used to make the charts for individual users. The ajax call gets data from the route users/charts and sets the charts.
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [Laravel](https://laravel.com/) - The web framework used
+* [Chartjs](https://maven.apache.org/) - Charts
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* **Sarmad Ahmed Khalil** - *Initial work* 
