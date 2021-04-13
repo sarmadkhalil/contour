@@ -11,8 +11,14 @@ use DateTime;
 use DB;
 
 class UserController extends Controller
-{
-    public function indexPage(Request $request){
+{        
+        /**
+         * indexPage
+         *
+         * @param  mixed $request
+         * @return view('users.index', compact('users'))
+         */
+        public function indexPage(Request $request){
         // $users = User::all();
         if($request->get('sort') == 'name_asc'){
             $users = User::query()
@@ -33,7 +39,13 @@ class UserController extends Controller
         
         return view('users.index', compact('users'));
     }
-
+    
+    /**
+     * getDataForCharts
+     *
+     * @param  mixed $request
+    //  * @return response()->json($userConversion)
+     */
     public function getDataForCharts(Request $request){
         $dates= array();
         $count= array();
@@ -45,10 +57,6 @@ class UserController extends Controller
         ->where('type', 'conversion')
         ->groupBy('date')
         ->get();
-
-
-
-        // dd($count);
 
         return response()->json($userConversion);
     }
