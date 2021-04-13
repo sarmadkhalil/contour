@@ -46,6 +46,12 @@ php artisan db:seed
 ```
 This process can take a long time, so I have added the sql file in the root folder of this project for the user to directly import it in the database
 
+Finally run npm install and npm run dev
+
+```
+npm install && npm run dev
+```
+
 Depending on user preference either run php artisan serve, or setup the virtual host https://medium.com/d6-digital/create-virtual-host-for-apache-on-windows-10-by-using-xampp-8664b0427567
 
 ## Classes
