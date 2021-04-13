@@ -12,7 +12,7 @@ What things you need to install the software and how to install them
 
 ```
 Xampp installed
-php v-4
+php v-7.4
 ```
 
 ### Installing
@@ -31,15 +31,15 @@ Run command php artisn key:generate.
 php artisn key:generate
 ```
 
-Create database in phpmyadmin
-Edit the .env file in the project folder and add the database name, user and password set
+Create database in phpmyadmin. 
+Edit the .env file in the project folder and add the database name, user and password. 
 Run php artisan migrate 
 
 ```
 php artisan migrate
 ```
 
-After migration run php artisan db:seed, to add all the data from json files to database
+After migration, run php artisan db:seed, to add all the data from json files to database
 
 ```
 php artisan db:seed
